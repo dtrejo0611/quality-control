@@ -48,3 +48,6 @@ The application mixes a graphical user interface created with PyQt5 and image-pr
 - OpenCV (opencv-python)
 - numpy
 - tkinter (usually included with standard Python installs; used only for file dialogs)
+
+Notes:
+- visionLib uses cv2.CAP_DSHOW in VideoCapture, which is specific to Windows. On Linux/macOS you may want to remove the CAP_DSHOW flag or adjust as needed.
